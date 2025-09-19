@@ -1,41 +1,119 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-6 font-sans">
-      
-      {/* Header */}
-      <header className="flex justify-between items-center w-full max-w-sm mb-8 text-black">
-        <h1 className="text-sm font-medium">Comision de fiestas de Matet 25/26</h1>
+    <div className="min-h-screen flex flex-col justify-between bg-[#fff] overflow-hidden px-6 pb-10">
+      <header className="w-full flex items-center justify-between pt-0">
+        <h1 className="text-8xl font-extrabold text-[#0000FF]">MATET</h1>
+        <Image
+          src="/flormasgruesaazul.png"
+          alt="Flor"
+          width={160}
+          height={160}
+          className="w-40 h-40 mt-6"
+        />
       </header>
+      <footer>
+        <Link
+          href="https://www.instagram.com/comisionmatet2026/"
+          className="block border-t border-gray-300 pt-2 mb-6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="flex items-center justify-between items-center">
+            <div>
+              <h2 className="text-5xl font-bold text-[#0000FF]">Instagram</h2>
+              <p className="text-xs text-gray-600 pt-2">
+                Siguenos en instagram para no perderte nada!<br />
+              </p>
+            </div>
+            <div className="h-16 w-16 rounded-full border border-[#0000FF] flex items-center justify-center text-[#0000FF]">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="3" y1="21" x2="21" y2="3" stroke="currentColor" strokeWidth="2" />
+                <polyline
+                  points="6,3 21,3 21,18"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+            </div>
+          </div>
+        </Link>
 
-      {/* Logo / Illustration */}
-      <div className="mb-10">
-        <div className="w-24 h-24 bg-black rounded-full flex items-center justify-center text-white text-4xl">
-          ⌘
-        </div>
-      </div>
+        <Link
+          href="https://whatsapp.com/channel/0029VbB8ZPv4o7qTNBBDME3H"
+          className="block border-t border-gray-300 pt-2 mb-6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-5xl font-bold text-[#0000FF]">WhatsApp</h2>
+              <p className="text-xs text-gray-600 pt-2">
+                Entra a nuestro canal para enterarte de todas las novedades<br />
+              </p>
+            </div>
+            <div className="h-16 w-16 rounded-full border border-[#0000FF] flex items-center justify-center text-[#0000FF]">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="3" y1="21" x2="21" y2="3" stroke="currentColor" strokeWidth="2" />
+                <polyline
+                  points="6,3 21,3 21,18"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+            </div>
+          </div>
+        </Link>
 
-      {/* Options */}
-      <div className="flex flex-col gap-4 w-full max-w-sm">
-        <button className="flex justify-between items-center bg-black text-white py-3 px-4 rounded-full">
-          <span className="flex items-center gap-2">❗ Stupebrett</span>
-          <span className="text-orange-500 font-bold">✕</span>
-        </button>
-        <button className="flex justify-between items-center bg-black text-white py-3 px-4 rounded-full">
-          <span className="flex items-center gap-2">🧗 Klatretårn</span>
-          <span className="text-orange-500 font-bold">✕</span>
-        </button>
-        <button className="flex justify-between items-center bg-black text-white py-3 px-4 rounded-full">
-          <span className="flex items-center gap-2">👨‍🍳 Kokkkekurs</span>
-          <span className="text-orange-500 font-bold">✕</span>
-        </button>
-      </div>
-
-      {/* Footer Button */}
-      <div className="mt-10 w-full max-w-sm">
-        <button className="bg-orange-400 text-black font-medium py-3 w-full rounded-full">
-          Neste →
-        </button>
-      </div>
+        <Link
+          href="https://fiestasmatet.vercel.app/"
+          className="block border-t border-gray-300 pt-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-5xl font-bold text-[#0000FF]">Web</h2>
+              <p className="text-xs text-gray-600 pt-2">
+                Siguenos en instagram para no perderte nada!<br />
+              </p>
+            </div>
+            <div className="h-16 w-16 rounded-full border border-[#0000FF] flex items-center justify-center text-[#0000FF]">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="3" y1="21" x2="21" y2="3" stroke="currentColor" strokeWidth="2" />
+                <polyline
+                  points="6,3 21,3 21,18"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+            </div>
+          </div>
+        </Link>
+      </footer>
     </div>
   );
 }
