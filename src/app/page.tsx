@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#fff] px-6 pb-10">
+    <div className="min-h-screen w-screen flex flex-col items-center bg-[#fff] px-6 pb-10">
       <header className="flex flex-col items-center justify-center">
         <h1 className="text-8xl font-extrabold text-[#0000FF]">MATET</h1>
         <Image
@@ -11,7 +11,7 @@ export default function Home() {
           alt="Flor"
           width={160}
           height={160}
-          className="w-40 h-40 mt-0"
+          className="w-40 h-40 mt-0 mb-6"
         />
       </header>
       <footer>
