@@ -3,15 +3,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-[#fff] overflow-hidden px-6 pb-10">
-      <header className="w-full flex items-center justify-between pt-0">
+    <div className="min-h-screen flex flex-col items-center bg-[#fff] px-6 pb-10">
+      <header className="flex flex-col items-center justify-center">
         <h1 className="text-8xl font-extrabold text-[#0000FF]">MATET</h1>
         <Image
           src="/flormasgruesaazul.png"
           alt="Flor"
           width={160}
           height={160}
-          className="w-40 h-40 mt-6"
+          className="w-40 h-40 mt-0"
         />
       </header>
       <footer>
